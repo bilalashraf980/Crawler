@@ -1,0 +1,1 @@
+json.(scraper, :id,:website_url)

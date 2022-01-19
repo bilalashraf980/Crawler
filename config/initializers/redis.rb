@@ -1,0 +1,1 @@
+$redis = Redis.new(host: ENV['REDIS_SERVER_HOST'], port: ENV['REDIS_SERVER_PORT'], db:  ENV['REDIS_SERVER_DB_SYSTEM'])
