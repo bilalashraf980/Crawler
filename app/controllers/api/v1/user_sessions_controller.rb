@@ -11,7 +11,7 @@ module Api
             "password": "xxxxxxxxx"
           },
           "user_session": {
-            "device_token" :"xxx"
+            "device_token" :"Add Any Random Token"
           }
         }
         HEADER: {
@@ -20,10 +20,10 @@ module Api
       
         Status Codes with Response
         200:{
-              "id": 4,
-              "email": "bilalashraf@yahoo.com",
-              "auth_token": "asdasdfasdfasdf97797987fasdfasdfasd"
-            }
+          "id": 4,
+          "email": "bilalashraf@yahoo.com",
+          "auth_token": "asdasdfasdfasdf97797987fasdfasdfasd"
+        }
 
         404: {"resp_message": "User Not Found"}
 
@@ -40,7 +40,7 @@ module Api
       end
       
       param :user_session, Hash, desc: 'User Session' do
-        param :device_token, String, desc: 'device token', required: true
+        param :device_token, String, desc: 'Add Any Random Token', required: true
       end
       
       def sign_in
